@@ -10,6 +10,7 @@ Studies & practices on graph theory with javascript
 -  [Graph Theory Introduction](./src/definitions/readme.md)
 -  [Problems in Graph Theory](./src/problems/readme.md)
 -  [Depth First Search Algorithm](./src/algorithms/search/dfs/readme.md)
+    - [Connected Components](./src/algorithms/connectivity/readme.md)
 -  Breadth First Search Algorithm
 -  Breadth First Search grid shortest path
 -  Topological Sort Algorithm
