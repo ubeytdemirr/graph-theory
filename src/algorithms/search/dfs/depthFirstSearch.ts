@@ -1,4 +1,4 @@
-import Vertex from "../../components/Vertex/Vertex";
+import Vertex from "../../../components/Vertex/Vertex";
 
 export default function depthFirstSearch(startVertex:Vertex,visited:Array<Vertex>=[]):Array<any> {
     // if I already visited (return back to the beginning)

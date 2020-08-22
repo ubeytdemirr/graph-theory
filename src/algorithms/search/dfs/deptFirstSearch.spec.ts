@@ -1,4 +1,4 @@
-import Graph from "../../components/Graph/Graph";
+import Graph from "../../../components/Graph/Graph";
 import depthFirstSearch from "./depthFirstSearch";
 
 describe("Testing depth first search", () => {
