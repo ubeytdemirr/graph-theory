@@ -1,5 +1,50 @@
 {
-  "typescript.tsdk": "node_modules/typescript/lib"
+  "typescript.tsdk": "node_modules/typescript/lib",
   // "typescript.implementationsCodeLens.enabled": true
   // "typescript.referencesCodeLens.enabled": true
+  "module-templates.engine": "handlebars",
+  "module-templates.templates": [
+    {
+      "displayName": "TypeScript Module",
+      "defaultPath": "src",
+      "folder": "{{pascal name}}",
+      "questions": {
+        "name": "Component name",
+      },
+      "files": [
+        {
+          "name": "{{pascal name}}.ts",
+          "content": [
+            "import I{{pascal name}} from './{{pascal name}}';",
+            "",
+            "class {{pascal name}} implements I{{pascal name}}{",
+            "",
+            "\tconstructor(){",
+              "\t\t",
+            "\t}",
+            "}",
+            "export default {{pascal name}};"
+          ]
+        },
+        {
+          "name": "{{pascal name}}.d.ts",
+          "content": [
+            "export default interface I{{pascal name}}{",
+            "\t",
+            "}"
+          ]
+        },
+        {
+          "name": "{{pascal name}}.spec.ts",
+          "content": [
+            "describe('',()=>{",
+            "\tit('',()=>{",
+            "\t\t//expect().toBe();",
+            "\t})",
+            "})",
+          ]
+        }
+      ]
+    }
+  ]
 }

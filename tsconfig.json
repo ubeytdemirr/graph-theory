@@ -3,6 +3,7 @@
     "target": "es2017",
     "outDir": "build/main",
     "rootDir": "src",
+    "watch":true,
     "moduleResolution": "node",
     "module": "commonjs",
     "declaration": true,
@@ -36,7 +37,7 @@
     // "emitDecoratorMetadata": true /* Enables experimental support for emitting type metadata for decorators. */,
 
     "lib": ["es2017"],
-    "types": ["node"],
+    "types": ["node","jasmine"],
     "typeRoots": ["node_modules/@types", "src/types"]
   },
   "include": ["src/**/*.ts"],
